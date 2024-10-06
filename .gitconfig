@@ -1,0 +1,23 @@
+[user]
+	name = David Corcoran
+	email = 44246360+ArcaneIRE@users.noreply.github.com
+	signingkey = 01D8D40525B8C104
+	signkey = 01D8D40525B8C104
+[color]
+	ui = auto
+[core]
+	editor = code --wait
+[credential]
+	helper = 
+	helper = /usr/local/bin/git-credential-manager
+	credentialStore = gpg
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[commit]
+	gpgsign = true
+[push]
+	autoSetupRemote = true
+[init]
+	defaultBranch = main
+[pager]
+	branch = false
