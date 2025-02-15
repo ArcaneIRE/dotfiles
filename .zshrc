@@ -150,9 +150,11 @@ alias c='clear'
 alias cd='z'
 
 # pyenv - https://github.com/pyenv/pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+if command -v pyenv >/dev/null 2>&1; then
+  export PYENV_ROOT="$HOME/.pyenv"
+  [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init -)"
+fi
 
 # Add pycharm to PATH
 export PATH=$PATH:/opt/pycharm-2024.1.4/bin/
