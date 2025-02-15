@@ -9,8 +9,8 @@ Ensure you have the following installed:
 sudo apt-get install git
 sudo apt-get install stow
 sudo apt install zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # https://github.com/ohmyzsh/ohmyzsh
 curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh # https://github.com/ajeetdsouza/zoxide
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # https://github.com/ohmyzsh/ohmyzsh
 ```
 
 ## Installation
