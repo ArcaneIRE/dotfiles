@@ -8,13 +8,13 @@ Ensure you have the following installed on your system
 
 ### Git
 
-```
+```bash
 sudo apt-get install git
 ```
 
 ### Stow
 
-```
+```bash
 sudo apt-get install stow
 ```
 
@@ -22,14 +22,14 @@ sudo apt-get install stow
 
 First, check out the dotfiles repo in your $HOME directory using git
 
-```
-$ git clone git@github.com/arcaneire/dotfiles.git
-$ cd dotfiles
+```bash
+git clone git@github.com/arcaneire/dotfiles.git
+cd dotfiles
 ```
 
 then use GNU stow to create symlinks
 
-```
+```bash
 $ stow .
 ```
 
