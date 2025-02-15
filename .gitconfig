@@ -12,6 +12,8 @@
 	credentialStore = gpg
 [credential "https://dev.azure.com"]
 	useHttpPath = true
+[gpg]
+	format = ssh
 [commit]
 	gpgsign = true
 [push]
