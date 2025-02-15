@@ -4,7 +4,7 @@ This directory contains the dotfiles for my system
 
 ## Requirements
 
-Ensure you have the following installed on your system
+Ensure you have the following installed:
 ```bash
 sudo apt-get install git
 sudo apt-get install stow
@@ -15,14 +15,14 @@ curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh 
 
 ## Installation
 
-First, check out the dotfiles repo in your $HOME directory using git
+First, clone the repo:
 
 ```bash
 git clone git@github.com:ArcaneIRE/dotfiles.git
 cd dotfiles
 ```
 
-then use GNU stow to create symlinks.
+then use GNU stow to create symlinks:
 
 ```bash
 stow .
