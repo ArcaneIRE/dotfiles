@@ -1,8 +1,7 @@
 [user]
 	name = David Corcoran
 	email = 44246360+ArcaneIRE@users.noreply.github.com
-	signingkey = 01D8D40525B8C104
-	signkey = 01D8D40525B8C104
+	signingkey = /home/arcane/.ssh/id_ed25519.pub
 [color]
 	ui = auto
 [core]
