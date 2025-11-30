@@ -6,6 +6,7 @@ This directory contains the dotfiles for my system
 
 Ensure you have the following installed:
 ```bash
+sudo apt update
 sudo apt-get install git
 sudo apt-get install stow
 sudo apt install zsh
