@@ -153,6 +153,7 @@ setopt hist_find_no_dups
 #
 # Example aliases
 alias zshconfig="code ~/.zshrc"
+alias zshhistory="code ~/.zsh_history"
 alias ohmyzsh="code ~/.oh-my-zsh"
 
 # Modern ls replacement with eza (install with: cargo install eza)
