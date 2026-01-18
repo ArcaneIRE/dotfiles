@@ -111,7 +111,7 @@ fi
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 # Add zsh plugins
-zinit light zsh-users/zsh-syntax-highlighting
+zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 # Snippets
@@ -120,6 +120,11 @@ zinit snippet OMZP::git
 # Load completions
 autoload -U compinit && compinit
 zinit cdreplay -q # Recommended by zinit docs
+
+# Completion styling
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' menu select
 
 # History
 HISTSIZE=5000
