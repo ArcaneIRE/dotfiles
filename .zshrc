@@ -114,8 +114,12 @@ source "${ZINIT_HOME}/zinit.zsh"
 zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
+zinit light Aloxaf/fzf-tab
 # Snippets
 zinit snippet OMZP::git
+
+# Set up fzf key bindings and fuzzy completion
+eval "$(mise activate zsh)"
 
 # Load completions
 autoload -U compinit && compinit
@@ -150,9 +154,23 @@ setopt hist_find_no_dups
 # Example aliases
 alias zshconfig="code ~/.zshrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
-alias ls='ls --color'
+
+# Modern ls replacement with eza (install with: cargo install eza)
+if command -v eza >/dev/null 2>&1; then
+    alias ls='eza --icons'
+    alias ll='eza -l --icons'
+    alias la='eza -la --icons'
+else
+    alias ls='ls --color'
+    alias ll='ls -lh'
+    alias la='ls -la'
+fi
+
 alias c='clear'
 alias cd='z'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias grep='grep --color=auto'
 
 # pyenv - https://github.com/pyenv/pyenv
 if command -v pyenv >/dev/null 2>&1; then
