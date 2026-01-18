@@ -172,6 +172,8 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias grep='grep --color=auto'
 
+alias gs="git status"
+
 # pyenv - https://github.com/pyenv/pyenv
 if command -v pyenv >/dev/null 2>&1; then
   export PYENV_ROOT="$HOME/.pyenv"
